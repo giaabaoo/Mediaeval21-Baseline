@@ -2,3 +2,47 @@
 
 ## Introduction
 This is the implementation for the baseline of our methods in Mediaeval 2021 Challenge.
+
+# HCMUS at Mediaeval21-SportClassificationTask
+## Introduction
+This is the official repository for our baseline [Mediaeval Challenge-Sport Classification Task](https://multimediaeval.github.io/editions/2021/tasks/sportsvideo/).
+Our solution for the problem consists of two stage: individual classification for each component of raw labels, and conditional probability model for producing final results.
+Here is the general pipeline of our baseline.
+
+## Repository Usage
+
+The original mmpose modules can be found at [Open-mmlab mmpose](https://github.com/open-mmlab/mmpose) )
+
+### Data
+
+Since the data for Mediaeval21 SportClassification Task was private, readers are suggested to contact [Challenge owners](https://multimediaeval.github.io/editions/2021/tasks/sportsvideo/)
+for downloading the data. After that, a sequence of data processing steps was applied before input to our method.
+
+
+### Training
+Run the shell script ```train.sh``` to train
+
+### Evaluating
+For each classifier, list of probability scores were produced. We utilized all three lists with the help of our proposed conditional probability models with prior knowledge
+to combine them together as final result. For more information about the methods, please refer to our [Working Notes]().
+
+
+### Testing
+Run the shell script ```infer.sh``` to conduct inference on the dataset
+
+### Citation
+```
+@misc{mmpose2020,
+    title={OpenMMLab Pose Estimation Toolbox and Benchmark},
+    author={MMPose Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmpose}},
+    year={2020}
+}
+```
+
+### Contact Information
+
+If you have any concerns about this project, please contact:
+
++ Nguyen Trong Tung(nguyentrongtung11101999@gmail.com)
+
