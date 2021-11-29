@@ -11,7 +11,7 @@ Here is the general pipeline of our baseline.
 
 ## Repository Usage
 
-The original mmpose modules can be found at [Open-mmlab mmpose](https://github.com/open-mmlab/mmpose) )
+The original mmpose modules can be found at [Open-mmlab mmpose](https://github.com/open-mmlab/mmpose)
 
 ### Data
 
